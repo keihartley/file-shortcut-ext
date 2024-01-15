@@ -1,0 +1,9 @@
+version: '3'
+services:
+  my-extension:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: file-shortcut-ext
+    ports:
+      - "3000:3000"
